@@ -16,10 +16,8 @@ def first_challenge
   contacts = contacts["Freddy Mercury"]
     contacts.each do |person, data|
         
-        #at this level, person is freddy and data it the hash of key/value pairs
-        #iterating over the "data" hash, will output the second level of data we need
-    
-      data[:favorite_icecream_flavors].each do |attribute, value|
+      data = data[:favorite_icecream_flavors]
+        
         if value["strawberry"]
           value.delete("strawberry")
         end 
@@ -29,3 +27,5 @@ def first_challenge
   end
   
 end
+        #at this level, person is freddy and data it the hash of key/value pairs
+        #iterating over the "data" hash, will output the second level of data we need
