@@ -7,7 +7,8 @@ def second_challenge
   }
 
   array_food = groceries.values
-    array_food.flatten
+    total_groceries = array_food.flatten
+
 end
 
 second_challenge
