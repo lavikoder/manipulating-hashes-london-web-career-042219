@@ -19,8 +19,8 @@ def first_challenge
         #at this level, person is freddy and data it the hash of key/value pairs
         #iterating over the "data" hash, will output the second level of data we need
     
-      data.each do |attribute, value|
-        if attribute == :favorite_icecream_flavors 
+      data[:favorite_icecream_flavors].each do |attribute, value|
+        if value == "strawberry" 
           value.each {|flavour| attributes.delete("strawberry")}
         end 
              #remember to return your newly altered contacts hash!
