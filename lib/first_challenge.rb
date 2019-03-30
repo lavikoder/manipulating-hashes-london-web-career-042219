@@ -13,19 +13,12 @@ def first_challenge
     }
   }
 
-  contacts = contacts["Freddy Mercury"]
     contacts.each do |person, data|
-        
-      data = data[:favorite_icecream_flavors]
-        
-        if value["strawberry"]
-          value.delete("strawberry")
-        end 
-             #remember to return your newly altered contacts hash!
-  contacts
+      if person == "Freddy Mercury"
+        data[favorite_icecream_flavors:].delete("strawberry")
       end
-  end
-  
+    end
+    contacts
 end
         #at this level, person is freddy and data it the hash of key/value pairs
         #iterating over the "data" hash, will output the second level of data we need
