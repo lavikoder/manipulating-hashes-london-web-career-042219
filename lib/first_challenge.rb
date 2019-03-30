@@ -22,8 +22,6 @@ def first_challenge
       puts "#{person}: #{data}"
     end
       
-      data = contacts["Freedy Mercury"][favourite_icecream_flavours]{
-      
       data.each do |attribute, value|
         if attribute == :favorite_icecream_flavors 
           value.each {|flavour| attributes.pop("strawberry")}
