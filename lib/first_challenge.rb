@@ -16,19 +16,16 @@ def first_challenge
   contacts = contacts["Freddy Mercury"]
     contacts.each do |person, data|
         
-        #at this level, perosn is freddy and data it the hash of key/value pairs
-        #iterating over the "data" hash, will output the second level of data we need.
-    end
-      
-      
+        #at this level, person is freddy and data it the hash of key/value pairs
+        #iterating over the "data" hash, will output the second level of data we need
+    
       data.each do |attribute, value|
         if attribute == :favorite_icecream_flavors 
           value.each {|flavour| attributes.pop("strawberry")}
-          puts "#{flavor}"
-
         end 
              #remember to return your newly altered contacts hash!
   contacts
       end
+  end
   
 end
